@@ -3,5 +3,5 @@ project(algorithms_and_data_structures)
 
 set(CMAKE_CXX_STANDARD 14)
 
-set(SOURCE_FILES main.cpp algorithms/euclid.cpp algorithms/euclid.h data_structures/point.cpp data_structures/point.h)
-add_executable(algorithms_and_data_structures ${SOURCE_FILES})
+set(SOURCE_FILES main.cpp algorithms/euclidean.cpp algorithms/euclidean.h data_structures/point.cpp data_structures/point.h algorithms/binary_power.h algorithms/binary_power.cpp)
+add_executable(algorithms_and_data_structures ${SOURCE_FILES} algorithms/binary_power.h)
