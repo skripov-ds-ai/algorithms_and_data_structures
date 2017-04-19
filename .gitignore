@@ -170,7 +170,4 @@ ENV/
 .ropeproject
 
 CMakeLists.txt
-algorithms/
 cmake-build-debug/
-data_structures/
-main.cpp
