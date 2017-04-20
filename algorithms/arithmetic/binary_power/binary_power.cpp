@@ -2,13 +2,10 @@
 // Created by 1 on 19.04.2017.
 //
 
-#ifndef ALGORITHMS_AND_DATA_STRUCTURES_BINARY_POWER_H
-#define ALGORITHMS_AND_DATA_STRUCTURES_BINARY_POWER_H
-
-#endif //ALGORITHMS_AND_DATA_STRUCTURES_BINARY_POWER_H
+#include "binary_power.h"
 
 namespace arithmetic {
-    template <class Integer>
+    template<class Integer>
     Integer binary_power(Integer a, Integer n) {
         Integer result = 1;
         while (n) {

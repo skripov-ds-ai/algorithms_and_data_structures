@@ -6,7 +6,6 @@
 #ifndef ALGORITHMS_AND_DATA_STRUCTURES_EUCLID_H
 #define ALGORITHMS_AND_DATA_STRUCTURES_EUCLID_H
 
-#endif //ALGORITHMS_AND_DATA_STRUCTURES_EUCLID_H
 
 namespace arithmetic {
     /*
@@ -33,3 +32,5 @@ namespace arithmetic {
     template  <class Unsigned>
     Unsigned lcm_for_unsigned(Unsigned a, Unsigned b);
 }
+
+#endif //ALGORITHMS_AND_DATA_STRUCTURES_EUCLID_H

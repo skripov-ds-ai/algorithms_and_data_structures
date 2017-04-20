@@ -3,5 +3,5 @@ project(algorithms_and_data_structures)
 
 set(CMAKE_CXX_STANDARD 14)
 
-set(SOURCE_FILES main.cpp algorithms/euclidean.cpp algorithms/euclidean.h data_structures/point.cpp data_structures/point.h algorithms/binary_power.h algorithms/binary_power.cpp)
-add_executable(algorithms_and_data_structures ${SOURCE_FILES} algorithms/binary_power.h)
+set(SOURCE_FILES main.cpp algorithms/arithmetic/euclidean/euclidean.cpp algorithms/arithmetic/euclidean/euclidean.h data_structures/analytic_geometry/point/point.cpp data_structures/analytic_geometry/point/point.h algorithms/arithmetic/binary_power/binary_power.h algorithms/arithmetic/binary_power/binary_power.cpp algorithms/arithmetic/multiply_using_bitwise_operators/russian_peasant.cpp algorithms/arithmetic/multiply_using_bitwise_operators/russian_peasant.h algorithms/sortings/bubble_sort/bubble_sort.h algorithms/sortings/bubble_sort/bubble_sort.cpp)
+add_executable(algorithms_and_data_structures ${SOURCE_FILES} algorithms/arithmetic/binary_power/binary_power.h algorithms/arithmetic/multiply_using_bitwise_operators/russian_peasant.cpp algorithms/arithmetic/multiply_using_bitwise_operators/russian_peasant.h algorithms/sortings/bubble_sort/bubble_sort.h)
