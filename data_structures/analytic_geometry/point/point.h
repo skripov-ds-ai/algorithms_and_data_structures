@@ -1,3 +1,4 @@
+#pragma once
 //
 // Created by 1 on 05.04.2017.
 //
@@ -58,6 +59,33 @@ namespace analytic_2d_geometry {
         Vector(Point a, Point b);
         double get_x() const;
         double get_y() const;
+        /*void set_x(double x);
+        void set_y(double y);*/
+        Vector operator+(const Vector &v) const;
+
+        Vector operator-(const Vector &v) const;
+
+        Vector operator-() const;
+
+        // multiply by scalar
+        Vector operator*(double k) const;
+
+        // divide on scalar
+        Vector operator/(double k) const;
+
+        // cross product
+        double operator*(const Vector &v) const;
+
+        // dot product
+        double operator%(const Vector &v) const;
+
+        double length() const;
+
+        // distance between two vectors/points
+        double distance_between(const Vector &v) const;
+
+        // distance between point/vector and line(always >= 0)
+        // double distance_between(const )
     };
 }
 

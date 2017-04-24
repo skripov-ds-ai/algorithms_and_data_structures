@@ -4,7 +4,7 @@
 
 #include "bubble_sort.h"
 
-namespace sorting {
+namespace sortings {
     template <class RandomAccessIterator>
     void bubble_sort(RandomAccessIterator first, RandomAccessIterator last) {
         bool swapped = true;
@@ -19,8 +19,9 @@ namespace sorting {
         }
     }
 
+    // there is an error
     template <class RandomAccessIterator, class Compare>
-    void sorting::bubble_sort(RandomAccessIterator first, RandomAccessIterator last, Compare comp) {
+    void sortings::bubble_sort(RandomAccessIterator first, RandomAccessIterator last, Compare &comp) {
         bool swapped = true;
         while (first != last-- && swapped) {
             swapped = false;
