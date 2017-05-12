@@ -12,7 +12,19 @@ namespace arithmetic {
      * unsigned integers
      * */
     template <class Unsigned>
-    Unsigned russian_peasant(Unsigned a, Unsigned b);
+    Unsigned russian_peasant(Unsigned a, Unsigned b) {
+        Unsigned result = 0;
+
+        while (b) {
+            if (b & 1) {
+                result += a;
+            }
+            a <<= 1;
+            b >>= 1;
+        }
+
+        return result;
+    }
 }
 
 #endif //ALGORITHMS_AND_DATA_STRUCTURES_RUSSIAN_PEASANT_H

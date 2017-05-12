@@ -11,8 +11,10 @@ using namespace std;
 using sortings::bubble_sort;
 using arithmetic::gcd_for_unsigned;
 int main() {
-    cout << arithmetic::gcd_for_unsigned((unsigned int)23, (unsigned int)43) << endl;
-    srand(42);
+    unsigned int n = 23, m = 43;
+    cout << "gcd(" << n << ", " << m << ") = "
+         << arithmetic::gcd_for_unsigned(n, m) << endl;
+    srand(242);
     vector<unsigned int> a(10, 0);
     for (size_t i = 0; i < a.size(); i++) {
         a[i] = rand() % (i + 37) + 3;
@@ -23,5 +25,5 @@ int main() {
     for (unsigned int elem : a) {
         cout << elem << " ";
     }
-    cout << "\n";
+    cout << endl;
 }

@@ -1,0 +1,14 @@
+//
+// Created by 1 on 12.05.2017.
+//
+
+#ifndef ALGORITHMS_AND_DATA_STRUCTURES_LIST_H
+#define ALGORITHMS_AND_DATA_STRUCTURES_LIST_H
+
+
+class list {
+
+};
+
+
+#endif //ALGORITHMS_AND_DATA_STRUCTURES_LIST_H
