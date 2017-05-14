@@ -1,3 +1,4 @@
+#pragma once
 //
 // Created by 1 on 05.04.2017.
 //
@@ -45,19 +46,46 @@ namespace analytic_2d_geometry {
     /*
      * Struct for 2d vector
      * */
-    struct Vector {
+    struct Point {
     private:
         double x, y;
     public:
-        Vector(void);
-        Vector(double x, double y);
+        Point(void);
+        Point(double x, double y);
         /*
-         * Constructor of Vector by two Points
+         * Constructor of Point by two Points
          * where a is start point and b is end point
          * */
-        Vector(Point a, Point b);
+        Point(Point a, Point b);
         double get_x() const;
         double get_y() const;
+        /*void set_x(double x);
+        void set_y(double y);*/
+        Point operator+(const Point &v) const;
+
+        Point operator-(const Point &v) const;
+
+        Point operator-() const;
+
+        // multiply by scalar
+        Point operator*(double k) const;
+
+        // divide on scalar
+        Point operator/(double k) const;
+
+        // cross product
+        double operator*(const Point &v) const;
+
+        // dot product
+        double operator%(const Point &v) const;
+
+        double length() const;
+
+        // distance between two vectors/points
+        double distance_between(const Point &v) const;
+
+        // distance between point/vector and line(always >= 0)
+        // double distance_between(const )
     };
 }
 

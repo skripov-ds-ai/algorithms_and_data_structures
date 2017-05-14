@@ -4,8 +4,11 @@
 
 #include "bubble_sort.h"
 
-namespace sorting {
-    template <class RandomAccessIterator>
+namespace sortings {
+    /*using std::iter_swap;
+    using std::swap;
+
+    template <typename RandomAccessIterator>
     void bubble_sort(RandomAccessIterator first, RandomAccessIterator last) {
         bool swapped = true;
         while (first != last-- && swapped) {
@@ -19,8 +22,9 @@ namespace sorting {
         }
     }
 
-    template <class RandomAccessIterator, class Compare>
-    void sorting::bubble_sort(RandomAccessIterator first, RandomAccessIterator last, Compare comp) {
+    // there is an error
+    template <typename RandomAccessIterator, typename Compare>
+    void bubble_sort(RandomAccessIterator first, RandomAccessIterator last, Compare comp) {
         bool swapped = true;
         while (first != last-- && swapped) {
             swapped = false;
@@ -31,5 +35,5 @@ namespace sorting {
                 }
             }
         }
-    }
+    }*/
 }
